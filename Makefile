@@ -10,5 +10,7 @@ publish:
 
 APPNAME=tryinferno
 heroku:
-	heroku container:push web -a $(APPNAME)
-	heroku container:release web -a $(APPNAME)
+	docker tag mehlon/tryinferno registry.heroku.com/$(APPNAME)/web
+	docker push registry.heroku.com/$(APPNAME)/web
+	heroku container:release web -a $APPNAME
+
