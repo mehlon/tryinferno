@@ -1,0 +1,8 @@
+# Inferno VNC
+Dockerized Inferno VNC, in the spirit of tryinferno.rekka.io
+TODO: add security. Currently everyone can access the same Inferno instance,
+it should spawn additional instances per user instead.
+
+uses https://hub.docker.com/r/mehlon/purgatorio
+based on https://github.com/theasp/docker-novnc 
+
